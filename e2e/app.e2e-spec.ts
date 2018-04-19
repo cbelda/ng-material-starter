@@ -1,14 +1,14 @@
-import { AngularMaterialExamplePage } from './app.po';
+import { AppPage } from './app.po';
 
-describe('angular-material-example App', () => {
-  let page: AngularMaterialExamplePage;
+describe('ng-starter-material App', () => {
+  let page: AppPage;
 
   beforeEach(() => {
-    page = new AngularMaterialExamplePage();
+    page = new AppPage();
   });
 
   it('should display welcome message', () => {
     page.navigateTo();
-    expect(page.getParagraphText()).toEqual('Welcome to example!!');
+    expect(page.getParagraphText()).toEqual('Welcome to example!');
   });
 });
